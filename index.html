@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Interactive Quiz</h1>
+                </div>
+                <p class="subtitle">Test your knowledge with our interactive quiz!</p>
+                <div class="quiz-info">
+                    <div class="info-item">
+                        <i class="fas fa-question-circle"></i>
+                        <span>10 Questions</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>No Time Limit</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Instant Feedback</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="btn btn-primary">
+                    <i class="fas fa-play"></i>
+                    Start Quiz
+                </button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <span id="question-counter">Question 1 of 10</span>
+                </div>
+                <div class="score-container">
+                    <i class="fas fa-star"></i>
+                    <span id="current-score">0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Loading question...</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn btn-secondary" disabled>
+                    <i class="fas fa-arrow-right"></i>
+                    Next Question
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <div class="results-header">
+                    <i class="fas fa-trophy"></i>
+                    <h1>Quiz Complete!</h1>
+                </div>
+                
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-label">/ 10</span>
+                    </div>
+                    <div class="score-details">
+                        <div class="score-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Correct: <span id="correct-answers">0</span></span>
+                        </div>
+                        <div class="score-item">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Incorrect: <span id="incorrect-answers">0</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-message">
+                    <h3 id="performance-title">Great Job!</h3>
+                    <p id="performance-description">You did well on this quiz!</p>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="restart-btn" class="btn btn-primary">
+                        <i class="fas fa-redo"></i>
+                        Take Quiz Again
+                    </button>
+                    <button id="home-btn" class="btn btn-secondary">
+                        <i class="fas fa-home"></i>
+                        Back to Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
