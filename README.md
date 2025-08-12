@@ -1,4 +1,15 @@
 # Interactive Quiz Application
+COMPANY: CODE TECH IT SOLUTIONS
+
+*NAME*: SHANU RAJPUT
+
+*INTERN ID*: CT04DH2707
+
+*DOMAIN*: FRONT END DEVELOPMENT
+
+*DURATION*: 4 WEEKS
+
+*MENTOR*: NEELA SANTOSH
 
 A modern, responsive quiz application built with HTML, CSS, and JavaScript.
 
@@ -70,3 +81,4 @@ To add your own questions, edit the `questions` array in `script.js`:
 ```
 
 Enjoy the quiz! 🎉
+
