@@ -80,5 +80,6 @@ To add your own questions, edit the `questions` array in `script.js`:
 }
 ```
 
-Enjoy the quiz! 🎉
-
+*OUTPUT*:
+<img width="1850" height="965" alt="Image" src="https://github.com/user-attachments/assets/52461540-b08b-4513-9d5f-063305d70f90" />
+<img width="1919" height="1078" alt="Image" src="https://github.com/user-attachments/assets/3ad8c654-797e-4708-8128-7b2258c3f297" />
